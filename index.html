@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="wrapper"></div>
@@ -28,41 +33,53 @@
         <div class="tabs__contents">
             <div class="tabs__contents_items" id="tab_1" >
                 <div class="header">
-                    <p>Завдання: Запросити у користувача його вік і визначити, ким він є: дитиною (0-2), підлітком (12-18), дорослим (18_60) або пенсіонером (60 ...).</p>
+                    <p>Запитати у користувача його вік і визначити, ким він є: дитиною (0-2), підлітком (12-18), дорослим (18_60) або пенсіонером (60 ...).</p>
                 </div>
 
                 <img  id="divPhoto" src="./img/question-mark.jpg" alt="question">
         
                 <p id="divText">Вкажи свій вік нижче</p>
         
-                <form name="ageForm">
+                <form class="form" name="ageForm">
                     <input type="number" name="ageIntro" placeholder="Вкажи, будь ласка, свій вік" pattern={0,120}>
-                    <input type="button" value="Введи число" onclick="ageFun()">
+                    <input type="button" class="button" value="Введи число" onclick="ageFun()">
                 </form>
             </div>
             <div class="tabs__contents_items" id="tab_2">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Sunt architecto temporibus assumenda rem placeat iusto recusandae, 
-                 vero, sed tempora repudiandae hic dicta repellat cumque ab dolor. 
-                 Minus, delectus recusandae! Nobis?
-                </p>
+                    <div class="header__tab_2">
+                        <p>Запитати у користувача число від 0 до 9 і вивести спецсимвол, який розташований на цій клавіші (1 !, 2 @, 3 # і т. д.).</p>
+                    </div>
+            
+                    <p id="divNumber">Вкажіть число нижче</p>
+            
+                    <form class="form__tab_2" name="numForm">
+                        <input type="number" class="number__tab_2"name="numIntro" placeholder="Вкажи, будь ласка, число">
+                        <input type="button" class="button__tab_2" value="Введи число" onclick="numFun()">
+                    </form>
             </div>
             <div class="tabs__contents_items" id="tab_3">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Sunt architecto temporibus assumenda rem placeat iusto recusandae, 
-                 vero, sed tempora repudiandae hic dicta repellat cumque ab dolor. 
-                 Minus, delectus recusandae! Nobis?
-                </p>
+                <div class="header__tab_3">
+                    <p>Запитати у користувача тризначне число і перевірити, чи є в ньому однакові цифри.</p>
+                </div>
+        
+                <p id="pNum">Вкажіть тризначне число</p>
+        
+                <form class="form__tab_3" name="numberForm">
+                    <input type="number" id="number__tab_3" name="numberInto" placeholder="Вкажи, будь ласка, число">
+                    <input type="button" class="button__tab_3" value="Введи число" onclick="numberFun()">
+                </form>
             </div>
             <div class="tabs__contents_items" id="tab_4">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Sunt architecto temporibus assumenda rem placeat iusto recusandae, 
-                 vero, sed tempora repudiandae hic dicta repellat cumque ab dolor. 
-                 Minus, delectus recusandae! Nobis?
-                </p>
+                <div class="header__tab_4">
+                    <p>Запитати у користувача рік і перевірити, високосний він чи ні. Високосний рік або кратний 400, або кратний 4 і при цьому не кратний 100.</p>
+                </div>
+        
+                <p id="paragraphNum">Вкажіть рік і перевірте</p>
+        
+                <form class="form__tab_4" name="yearForm">
+                    <input type="number" id="number__tab_4" name="yearInto" placeholder="Вкажи, будь ласка, рік">
+                    <input type="button" class="button__tab_4" value="Введи число" onclick="yearFun()">
+                </form>
             </div>
             <div class="tabs__contents_items" id="tab_5">
                 <p>
@@ -117,5 +134,8 @@
 </div>
 </section>
 <script src="./task1.js"></script>
+<script src="./task2.js"></script>
+<script src="./task3.js"></script>
+<script src="./task4.js"></script>
 </body>
 </html>
