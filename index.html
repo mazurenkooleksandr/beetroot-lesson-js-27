@@ -82,20 +82,60 @@
                 </form>
             </div>
             <div class="tabs__contents_items" id="tab_5">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Sunt architecto temporibus assumenda rem placeat iusto recusandae, 
-                 vero, sed tempora repudiandae hic dicta repellat cumque ab dolor. 
-                 Minus, delectus recusandae! Nobis?
-                </p>
+                <div class="header__tab_5">
+                    <p>Запитати у користувача п'ятирозрядне число і визначити, чи є воно паліндромом.</p>
+                </div>
+        
+                <p id="palindromeParagraph">Вкажіть п'ятирозрядне число</p>
+        
+                <form class="form__tab_5" name="palindromeForm">
+                    <input type="number" id="number__tab_5" name="palindromeInto" placeholder="Вкажіть п'ятирозрядне число">
+                    <input type="button" class="button__tab_5" value="Введи число" onclick="palindromeFun()">
+                </form>
             </div>
-            <div class="tabs__contents_items" id="tab_6">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Sunt architecto temporibus assumenda rem placeat iusto recusandae, 
-                 vero, sed tempora repudiandae hic dicta repellat cumque ab dolor. 
-                 Minus, delectus recusandae! Nobis?
-                </p>
+           <div class="tabs__contents_items" id="tab_6">
+                <div class="header__tab_6">
+                    <p>Написати конвертор валют. Користувач вводить кількість UAН, вибирає, в яку валюту хоче перевести EUR, USD або
+                        GBP, і отримує у відповідь відповідну суму.</p>
+                </div>
+                <div class="all-blocks">
+                    <div class="currency">
+                        <table>
+                            <tr>
+                                <td colspan="2">курси валют</td>
+                            </tr>
+                            <tr>
+                                <td>валюти</td>
+                                <td>купівля</td>
+                            </tr>
+                            <tr>
+                                <td>eur</td>
+                                <td>34.23</td>
+                            </tr>
+                            <tr>
+                                <td>usd</td>
+                                <td>28.03</td>
+                            </tr>
+                            <tr>
+                                <td>gbp</td>
+                                <td>38.34</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="currency-exchange">
+                        <p id="currencyParagraph">Вкажіть суму в UAН</p>
+            
+                    <form class="form__tab_6" name="currencyForm">
+                        <input type="number" id="number__tab_6" name="currencyInto" placeholder="Вкажіть суму в UAН">
+                        <input type="button" class="button__tab_6" id ="eur" value="EUR" onclick="eurFun()">
+                        <input type="button" class="button__tab_6" id ="usd" value="USD" onclick="usdFun()">
+                        <input type="button" class="button__tab_6" id ="gbp" value="GBP" onclick="gbpFun()">
+                    </form>
+    
+                    </div>
+                </div> 
+            </div>
             </div>
             <div class="tabs__contents_items" id="tab_7">
                 <p>
@@ -137,5 +177,7 @@
 <script src="./task2.js"></script>
 <script src="./task3.js"></script>
 <script src="./task4.js"></script>
+<script src="./task5.js"></script>
+<script src="./task6.js"></script>
 </body>
 </html>
