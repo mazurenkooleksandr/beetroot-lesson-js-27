@@ -41,7 +41,7 @@
                 <p id="divText">Вкажи свій вік нижче</p>
         
                 <form class="form" name="ageForm">
-                    <input type="number" name="ageIntro" placeholder="Вкажи, будь ласка, свій вік" pattern={0,120}>
+                    <input type="number" class="number__tab_1"name="ageIntro" placeholder="Вкажи, будь ласка, свій вік" pattern={0,120}>
                     <input type="button" class="button" value="Введи число" onclick="ageFun()">
                 </form>
             </div>
@@ -136,14 +136,18 @@
                     </div>
                 </div> 
             </div>
-            </div>
             <div class="tabs__contents_items" id="tab_7">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Sunt architecto temporibus assumenda rem placeat iusto recusandae, 
-                 vero, sed tempora repudiandae hic dicta repellat cumque ab dolor. 
-                 Minus, delectus recusandae! Nobis?
-                </p>
+                <div class="header__tab_7">
+                    <p>Запитати у користувача суму покупки і вивести суму до оплати зі знижкою: від 200 до 300 - знижка буде 3%, від 300 до 500 - 5%, від 500 і вище - 7%.</p>
+                </div>
+        
+                <p id="sevenNum">Сума зі знижкою: 0 грн.</p>
+                <p id="amountNum">Знижка: 0%, 0 грн.</p>
+        
+                <form class="form__tab_7" name="sevenForm">
+                    <input type="number" id="number__tab_7" name="sevenInto" placeholder="Вкажіть суму покупки">
+                    <input type="button" class="button__tab_7" value="Введи число" onclick="sevenFun()">
+                </form>
             </div>
             <div class="tabs__contents_items" id="tab_8">
                 <p>
@@ -179,5 +183,6 @@
 <script src="./task4.js"></script>
 <script src="./task5.js"></script>
 <script src="./task6.js"></script>
+<script src="./task7.js"></script>
 </body>
 </html>

@@ -153,6 +153,15 @@ body {
     right: 0;
 }
 
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 /*Завдання №1*/
 
 .header {
@@ -183,11 +192,11 @@ body {
     margin-top: 40px; 
 }
 
-input[type='number']{
+.number__tab_1{
     width: 300px;
     height: 80px;
     border: none;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -204,7 +213,7 @@ input[type='number']{
     font-size: 19px;
     border: none;
     position: relative;
-    top: -1px;
+    top: -4px;
     cursor: pointer;
 }
 
@@ -244,7 +253,7 @@ input[type='number']{
     font-size: 19px;
     border: none;
     position: relative;
-    top: -1px;
+    top: -4px;
     cursor: pointer;
 }
 
@@ -515,6 +524,58 @@ td {
 
 .currency-exchange{
     margin-top: 60px;
+}
+
+/*Завдання №7*/
+.header__tab_7 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Marmelad', sans-serif;
+}
+
+#sevenNum {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#amountNum {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.form__tab_7 {
+    text-align: center;
+}
+
+#number__tab_7 {
+    width: 300px;
+    height: 80px;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+.button__tab_7 {
+    width: 130px;
+    height: 80px;
+    background-color: rgb(78, 73, 75);
+    color: #fff;
+    font-size: 19px;
+    border: none;
+    position: relative;
+    top: -4px;
+    cursor: pointer;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: 20px;
 }
 
 
