@@ -164,7 +164,7 @@ input::-webkit-inner-spin-button {
 
 /*Завдання №1*/
 
-.header {
+.header__tab_1 {
     text-align: center;
     font-family: 'Marmelad', sans-serif;
     font-size: 20px;
@@ -172,14 +172,14 @@ input::-webkit-inner-spin-button {
     color: #fff;
 }
 
-#divPhoto {
+#firsttaskPhoto {
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 30px;
 }
 
-#divText {
+#firsttaskText {
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
@@ -187,7 +187,7 @@ input::-webkit-inner-spin-button {
     margin-top: 40px;
 }
 
-.form {
+.form__tab_1 {
     text-align: center;
     margin-top: 40px; 
 }
@@ -205,7 +205,7 @@ input::-webkit-inner-spin-button {
     font-size: 20px;
 }
 
-.button  {
+.button__tab_1  {
     width: 130px;
     height: 80px;
     background-color: rgb(78, 73, 75);
@@ -577,6 +577,126 @@ td {
     text-align: center;
     font-size: 20px;
 }
+
+/*Завдання №8*/
+.header__tab_8 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Marmelad', sans-serif;
+}
+
+#eightNum {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#circleNum {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.form__tab_8 {
+    text-align: center;
+}
+
+#number__tab_8 {
+    width: 300px;
+    height: 80px;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+.button__tab_8 {
+    width: 130px;
+    height: 80px;
+    background-color: rgb(78, 73, 75);
+    color: #fff;
+    font-size: 19px;
+    border: none;
+    position: relative;
+    top: -4px;
+    cursor: pointer;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: 20px;
+}
+
+/*Завдання №9*/
+.header__tab_9 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Marmelad', sans-serif;
+}
+
+.quize {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.question {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif; 
+    background-color: crimson;
+    line-height: 85px;
+}
+
+#button__tab_9 {
+    width: 130px;
+    height: 80px;
+    background-color: rgb(78, 73, 75);
+    color: #fff;
+    font-size: 23px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.answer {
+    list-style-type: none;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif; 
+    margin-right: 35px;
+}
+
+.answer > li {
+    background-color: rgb(151, 121, 20);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.answer > li:hover {
+    transform: scale(1.03);
+    background-color: rgb(79, 110, 248);
+}
+
+
+
+
+
+
+
 
 
 

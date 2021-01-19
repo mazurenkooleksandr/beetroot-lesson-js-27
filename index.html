@@ -32,17 +32,17 @@
     
         <div class="tabs__contents">
             <div class="tabs__contents_items" id="tab_1" >
-                <div class="header">
+                <div class="header__tab_1">
                     <p>Запитати у користувача його вік і визначити, ким він є: дитиною (0-2), підлітком (12-18), дорослим (18_60) або пенсіонером (60 ...).</p>
                 </div>
 
-                <img  id="divPhoto" src="./img/question-mark.jpg" alt="question">
+                <img  id="firsttaskPhoto" src="./img/question-mark.jpg" alt="question">
         
-                <p id="divText">Вкажи свій вік нижче</p>
+                <p id="firsttaskText">Вкажи свій вік нижче</p>
         
-                <form class="form" name="ageForm">
-                    <input type="number" class="number__tab_1"name="ageIntro" placeholder="Вкажи, будь ласка, свій вік" pattern={0,120}>
-                    <input type="button" class="button" value="Введи число" onclick="ageFun()">
+                <form class="form__tab_1" name="firsttaskForm">
+                    <input type="number" class="number__tab_1"name="firsttaskInto" placeholder="Вкажи, будь ласка, свій вік" pattern={0,120}>
+                    <input type="button" class="button__tab_1" value="Введи число" onclick="firsttaskFun()">
                 </form>
             </div>
             <div class="tabs__contents_items" id="tab_2">
@@ -150,20 +150,27 @@
                 </form>
             </div>
             <div class="tabs__contents_items" id="tab_8">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Sunt architecto temporibus assumenda rem placeat iusto recusandae, 
-                 vero, sed tempora repudiandae hic dicta repellat cumque ab dolor. 
-                 Minus, delectus recusandae! Nobis?
-                </p>
+                <div class="header__tab_8">
+                    <p>Запитати у користувача довжину окружності і периметр квадрата. Визначити, чи може така окружність поміститися в зазначений квадрат.</p>
+                </div>
+        
+                <p id="eightNum">Квадрат: 0</p>
+                <p id="circleNum">Коло: 0</p>
+        
+                <form class="form__tab_8" name="eightForm">
+                    <input type="number" id="number__tab_8" name="eightInto" placeholder="Вкажіть довжину">
+                    <input type="button" class="button__tab_8" value="Введи число" onclick="eightFun()">
+                </form>
             </div>
             <div class="tabs__contents_items" id="tab_9">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Sunt architecto temporibus assumenda rem placeat iusto recusandae, 
-                 vero, sed tempora repudiandae hic dicta repellat cumque ab dolor. 
-                 Minus, delectus recusandae! Nobis?
-                </p>
+                <div class="header__tab_9">
+                    <p>Задати користувачеві 4 питання, в кожному питанні по 4 варіанти відповіді. За кожну правильну відповідь нараховується 2 бали. Після запитань виведіть користувачеві кількість набраних балів.</p>
+                </div>
+
+                <input type="button" id="button__tab_9" value="Вікторина" onclick="nineFun()">
+                <div class="question"></div>
+                <ul class="answer"></ul>  
+        
             </div>
             <div class="tabs__contents_items" id="tab_10">
                 <p>
@@ -184,5 +191,6 @@
 <script src="./task5.js"></script>
 <script src="./task6.js"></script>
 <script src="./task7.js"></script>
+<script src="./task9.js"></script>
 </body>
 </html>

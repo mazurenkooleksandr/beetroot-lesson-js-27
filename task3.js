@@ -10,18 +10,11 @@ function numberFun () {
          text.innerHTML="Тут немає однакових чисел";
     } 
 
-    document.getElementById("number__tab_3").oninput=function(){
-        let input = parseInt(this.value);
-        if(input<0 || input>999){
-            alert("Вкажіть тризначне число");
-        }
-    } 
-
-    
-
-   
-
-   
-
-
 }
+
+document.getElementById("number__tab_3").oninput=function(){
+    let input = parseInt(this.value);
+    if(input<0 || input>999){
+        alert("Вкажіть тризначне число");
+    }
+} 
