@@ -173,12 +173,16 @@
         
             </div>
             <div class="tabs__contents_items" id="tab_10">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Sunt architecto temporibus assumenda rem placeat iusto recusandae, 
-                 vero, sed tempora repudiandae hic dicta repellat cumque ab dolor. 
-                 Minus, delectus recusandae! Nobis?
-                </p>
+                <div class="header__tab_10">
+                    <p>Запитати дату (день, місяць, рік) і вивести наступну за нею дату. Врахуйте можливість переходу на наступний місяць, рік, а також високосний рік.</p>
+                </div>
+        
+                <p id="tenNum">Вкажи дату та дізнайся наступну</p>
+        
+                <form class="form__tab_10" name="tenForm">
+                    <input type="date" id="number__tab_10" name="tenInto" placeholder="Вкажіть суму покупки">
+                    <input type="button" class="button__tab_10" value="Введи дату" onclick="tenFun()">
+                </form>
             </div>
         </div>
     </div>
@@ -192,5 +196,6 @@
 <script src="./task6.js"></script>
 <script src="./task7.js"></script>
 <script src="./task9.js"></script>
+<script src="./task10.js"></script>
 </body>
 </html>
