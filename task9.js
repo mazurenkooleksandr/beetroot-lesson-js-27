@@ -49,17 +49,16 @@ const quiz = [
 
 ];
 
-let answers = {
-
-
-    
-}
-
-
 
 function nineFun() {
-    let result = {};
+    let result = {
+        "r": 0,
+        "w": 0,
+        "l": 0,
+        "q": 0
+    };
     let step = 0;
+    
 
     function showQuestion (questionNumber) {
         document.getElementById("button__tab_9").style.display = "none";
@@ -88,25 +87,29 @@ function nineFun() {
                 showQuestion(step);
 
             }
-        }
-        console.log(result)
 
-        
-        
+
+        }
+        if (event.target.classList.contains('reload-button')) {
+            location.reload();
+        }
     }
-    
+
 
     function showResult() {
-        
         let key = Object.keys(result).reduce(function(a,b){
-           
-        });
-        console.log(key);
+            let score = document.querySelector('.score');
+            score.innerHTML = 'Кількість набраних балів: ' + result.r*2;
+            
+            
+
+        }); 
+
+        let reloadButton = document.createElement('button');
+        reloadButton.innerHTML = 'Почати знову';
+        reloadButton.classList.add('reload-button');
+        document.querySelector('.reset-button').appendChild(reloadButton);
     }
-    
-    
-
-
 
     showQuestion(step);
     

@@ -655,6 +655,15 @@ td {
     line-height: 85px;
 }
 
+
+.score {
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif; 
+    line-height: 85px;
+}
+
 #button__tab_9 {
     width: 130px;
     height: 80px;
@@ -666,6 +675,22 @@ td {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
+    
+}
+
+.reload-button {
+    width: 180px;
+    height: 80px;
+    background-color: rgb(78, 73, 75);
+    color: #fff;
+    font-size: 23px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
     
 }
 
