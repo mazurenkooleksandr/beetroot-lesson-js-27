@@ -151,16 +151,33 @@
             </div>
             <div class="tabs__contents_items" id="tab_8">
                 <div class="header__tab_8">
-                    <p>Запитати у користувача довжину окружності і периметр квадрата. Визначити, чи може така окружність поміститися в зазначений квадрат.</p>
+                    <p>Запитати у користувача довжину окружності і периметр квадрата. Визначити, чи може така окружність поміститися в зазначений квадрат. (Ви вказуєте значення у міліметрах)</p>
                 </div>
+
+                <div class="block">
+
+                    <div>
+                        <div class="square "> 
+
+                            <form class="form__tab_8" name="eightForm">
+                                <input type="number" id="number__tab_8_square" placeholder="Квадрат"name="eightInto">
+                                <input type="button" id="button__tab_8_square" value="Введи число" onclick="eightFun()">
+                            </form>
+                        </div>
+
+                        <div class="circle">
         
-                <p id="eightNum">Квадрат: 0</p>
-                <p id="circleNum">Коло: 0</p>
-        
-                <form class="form__tab_8" name="eightForm">
-                    <input type="number" id="number__tab_8" name="eightInto" placeholder="Вкажіть довжину">
-                    <input type="button" class="button__tab_8" value="Введи число" onclick="eightFun()">
-                </form>
+                            <form class="form__tab_8" name="eightForm">
+                                <input type="number" id="number__tab_8_circle" placeholder="Коло" name="eightInto">
+                                <input type="button" id="button__tab_8_circle" value="Введи число" onclick="eightFun()">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="circle_result"></div>
+                    <div class="square_result"></div>
+                    <div class="all_result"></div>
+                </div>
             </div>
             <div class="tabs__contents_items" id="tab_9">
                 <div class="header__tab_9">
@@ -197,6 +214,7 @@
 <script src="./task5.js"></script>
 <script src="./task6.js"></script>
 <script src="./task7.js"></script>
+<script src="./task8.js"></script>
 <script src="./task9.js"></script>
 <script src="./task10.js"></script>
 </body>

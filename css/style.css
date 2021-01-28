@@ -587,35 +587,79 @@ td {
     font-family: 'Marmelad', sans-serif;
 }
 
-#eightNum {
-    color: #fff;
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
+.square {
+    display: flex;
 }
 
-#circleNum {
-    color: #fff;
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
+.circle {
+    display:flex;
 }
 
 .form__tab_8 {
+    margin-top: 44px;
+    margin-left: 5px;
+
+}
+.all_result {
+    color: #fff;
+    font-size: 20px;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
 }
 
-#number__tab_8 {
-    width: 300px;
-    height: 80px;
+
+#number__tab_8_circle {
+    width: 150px;
+    height: 47px;
     border: none;
     font-size: 30px;
     text-align: center;
 }
 
-.button__tab_8 {
+#number__tab_8_square {
+    width: 150px;
+    height: 47px;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+.block {
+    display: flex;
+}
+
+.square_result {
+    position: relative;
+    left: 320px;
+    top: 40px;
+    z-index: 1;
+}
+
+.circle_result {
+    position: absolute;
+    left: 633px;
+    top: 187px;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+
+#button__tab_8_circle {
     width: 130px;
-    height: 80px;
+    height: 52px;
+    background-color: rgb(78, 73, 75);
+    color: #fff;
+    font-size: 19px;
+    border: none;
+    position: relative;
+    top: -4px;
+    cursor: pointer;
+}
+
+#button__tab_8_square {
+    width: 130px;
+    height: 52px;
     background-color: rgb(78, 73, 75);
     color: #fff;
     font-size: 19px;
@@ -626,8 +670,9 @@ td {
 }
 
 ::placeholder {
+    color: #000;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /*Завдання №9*/
