@@ -668,6 +668,19 @@ td {
     cursor: pointer;
 }
 
+#button__tab_8_reset{
+    width: 130px;
+    height: 32px;
+    background-color: rgb(78, 73, 75);
+    color: #fff;
+    font-size: 19px;
+    border: none;
+    position: relative;
+    top: 14px;
+    left: 70px;
+    cursor: pointer;
+}
+
 ::placeholder {
     color: #000;
     text-align: center;
